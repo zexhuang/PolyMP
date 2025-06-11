@@ -1,0 +1,13 @@
+name: glyph
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.9.0
+  - shapely
+  - scikit-learn
+  - freetype
+  - freetype-py
+  - scipy
+  - pandas
+prefix: /home/usr/
