@@ -2,5 +2,6 @@
 .DS_Store
 __pycache__
 */__pycache__
-data/*
+data/GlyphDataset/**/*.pkl
+data/OSMDataset/**/*.pkl
 !data/dataset.py
