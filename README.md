@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is the official code repository of paper *Learning Geometric Invariant Features for Classification of Vector Polygons with Graph Message-passing Neural Network*.
+This is the official code repository of paper *Learning Geometric Invariant Features for Classification of Vector Polygons with Graph Message-passing Neural Network* published on *GeoInformatica*.
 
 ## Abstract
 
