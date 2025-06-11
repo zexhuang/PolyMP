@@ -1,0 +1,32 @@
+# Dataset
+glyph: data/GlyphDataset/glyph.pkl
+train: data/GlyphDataset/train/glyph_train.pkl
+val: data/GlyphDataset/val/glyph_val.pkl
+test: data/GlyphDataset/test/glyph_test.pkl
+
+osm_train: data/OSMDataset/train/osm_train.pkl
+osm_test: data/OSMDataset/test/osm_test.pkl
+
+frac: 0.0
+batch: 64
+worker: 5
+# cls: {'E':0, 'F':1, 'H':2, 'I':3, 'L':4, 'O':5, 'T':6, 'U':7, 'Y':8, 'Z':9}
+cls: {'A':0, 'B':1, 'C':2, 'D':3, 'E':4, 'F':5, 'G':6, 'H':7, 'I':8, 'J':9, 'K':10, 
+      'L':11, 'M':12, 'N':13, 'O':14, 'P':15, 'Q':16, 'R':17, 'S':18, 'T':19, 'U':20, 
+      'V':21, 'W':22, 'X':23, 'Y':24, 'Z':25}
+
+# Config
+epoch: 100
+patience: 100
+lr: 0.001
+w_decay: 0.0001
+device: 'cuda'
+ckpt: epoch100
+normalised: True
+
+# Model
+in_channels: 2
+hid_channels: 64
+out_channels: 26
+
+model_list: ['dsc_polymp', 'polymp', 'nuft_spec_mlp', 'dsc_nmp', 'deepset', 'transformer', 'gcn', 'cnn']
